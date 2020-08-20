@@ -9,47 +9,55 @@ var cardCollection = ["tarot0.jpg", "tarot1.jpg", "tarot2.jpg", "tarot3.jpg", "t
 "tarot60.jpg", "tarot61.jpg", "tarot62.jpg", "tarot63.jpg", "tarot64.jpg", "tarot65.jpg", "tarot66.jpg", "tarot67.jpg", "tarot68.jpg", "tarot69.jpg", 
 "tarot70.jpg", "tarot71.jpg", "tarot72.jpg", "tarot73.jpg", "tarot74.jpg", "tarot75.jpg", "tarot76.jpg", "tarot77.jpg"];
 
+// Card 1
 var oneCard = document.getElementById("card1");
 
 oneCard.addEventListener("click", function(){
     if (oneCard.src = "images/tarotBack.jpg") {
-        const rand1 = Math.floor(Math.random() * cardCollection.length);
-        oneCard.src = "images/" + cardCollection[rand1].toString();
+        const rand1 = cardCollection.splice(Math.floor(Math.random() * 78), 1);
+        oneCard.src = "images/" + rand1;
     } 
 })
+
+// Card 2
 
 var twoCard = document.getElementById("card2");
 
 twoCard.addEventListener("click", function(){
     if (twoCard.src = "images/tarotBack.jpg") {
-        const rand2 = Math.floor(Math.random() * cardCollection.length);
-        twoCard.src = "images/" + cardCollection[rand2].toString();
+        const rand2 = cardCollection.splice(Math.floor(Math.random() * 78), 1);
+        twoCard.src = "images/" + rand2;
     }
 })
+
+// Card 3
 
 var threeCard = document.getElementById("card3");
 
 threeCard.addEventListener("click", function(){
     if (threeCard.src = "images/tarotBack.jpg") {
-        const rand3 = Math.floor(Math.random() * cardCollection.length);
-        threeCard.src = "images/" + cardCollection[rand3].toString();
+        const rand3 = cardCollection.splice(Math.floor(Math.random() * 78), 1);
+        threeCard.src = "images/" + rand3;
     }
 })
+
+// Card 4
 
 var fourCard = document.getElementById("card4");
 
 fourCard.addEventListener("click", function(){
     if (fourCard.src = "images/tarotBack.jpg") {
-        const rand4 = Math.floor(Math.random() * cardCollection.length);
-        fourCard.src = "images/" + cardCollection[rand4].toString();
+        const rand4 = cardCollection.splice(Math.floor(Math.random() * 78), 1);
+        fourCard.src = "images/" + rand4;
     }
 })
 
+// Card 5
 var fiveCard = document.getElementById("card5");
 
 fiveCard.addEventListener("click", function(){
     if (fiveCard.src = "images/tarotBack.jpg") {
-        const rand5 = Math.floor(Math.random() * cardCollection.length);
-        fiveCard.src = "images/" + cardCollection[rand5].toString();
+        const rand5 = cardCollection.splice(Math.floor(Math.random() * 78), 1);
+        fiveCard.src = "images/" + rand5;
     }
 })
