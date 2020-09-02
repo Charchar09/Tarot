@@ -10,47 +10,66 @@
         <link rel="stylesheet" type="text/css" href="CSS.css">
         <!--Google Font-->
         <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-        
     </head>
 
     <body>
         <h1>Five Card Spread</h1>
         
-        
+        <!--Reload Button-->
         <button onclick="location.reload()">Shuffle Deck</button>
         
-        <button>Card Description</button>
-        
-        
+        <!-- Modal Button -->
+        <button id="myBtn" onclick="">Card Description</button>
+
+        <!-- Modal Box -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <span class="close">Close</span>
+            <h2>Your Fortune</h2>
+            <h4>Card 1: The present or general theme of the reading</h4>
+            <p class="fortune" id="fortune1"></p>
+            <h4>Card 2: Past influences still having effect</h4>
+            <p class="fortune" id="fortune2"></p>
+            <h4>Card 3: The future</h4>
+            <p class="fortune" id="fortune3"></p>
+            <h4>Card 4: The reason behind the question (this will probably shed light on 2)</h4>
+            <p class="fortune" id="fortune4"></p>
+            <h4>Card 5: The potential within the situation.</h4>
+            <p class="fortune" id="fortune5"></p>
+            </div>
+
+        </div>
+
+
         <div class="row">
 
 
             <div class="col-12 fourthCard">
                 <img id="card4" src="images/tarotBack.jpg" alt="cards">
-                <p class="fourth">Fourth: The reason behind the question.</p> 
+                <p class="fourth">Fourth</p> 
             </div>
     
             <div class="col-4 Card thirdCard">
                 <img id="card3" src="images/tarotBack.jpg" alt="cards">
-                <p class="third">Third: The future of the person and the question being asked.</p>
+                <p class="third">Third</p>
             </div>
     
     
             <div class="col-4 Card firstCard">
                 <img id="card1" src="images/tarotBack.jpg" alt="cards" >
-                <p class="first">First: Present and the question being asked.</p>
+                <p class="first">First</p>
             </div>
     
            
             <div class="col-4 Card secondCard">
                 <img id="card2" src="images/tarotBack.jpg" alt="cards">
-                <p class="second">Second: Represents the past and the influence it has on the question being put forward.</p>
+                <p class="second">Second</p>
             </div>
     
         
             <div class="col-12 fifthCard">
                 <img id="card5" src="images/tarotBack.jpg" alt="cards">
-                <p class="fifth">Fifth: Semblance of a solution by providing a potential within the quesiton.</p>
+                <p class="fifth">Fifth</p>
             </div>
             
         </div>
