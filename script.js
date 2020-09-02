@@ -103,7 +103,7 @@ oneCard.addEventListener("click", function(){
         oneCard.src = `images/${rand1}`;
         
         sentence1 = cardSentence[rand1];
-        fort1 = document.getElementById("fortune1").innerHTML = sentence1;
+        document.getElementById("fortune1").innerHTML = sentence1;
     }
         
 })
@@ -116,7 +116,7 @@ twoCard.addEventListener("click", function(){
         const rand2 = cardCollection.splice(Math.floor(Math.random() * cardCollection.length), 1);
         twoCard.src = `images/${rand2}`;
         sentence2 = cardSentence[rand2];
-        fort2 = document.getElementById("fortune2").innerHTML = sentence2;
+        document.getElementById("fortune2").innerHTML = sentence2;
     }
 })
 
@@ -129,7 +129,7 @@ threeCard.addEventListener("click", function(){
         const rand3 = cardCollection.splice(Math.floor(Math.random() * cardCollection.length), 1);
         threeCard.src = `images/${rand3}`;
         sentence3 = cardSentence[rand3];
-        fort3 = document.getElementById("fortune3").innerHTML = sentence3;
+        document.getElementById("fortune3").innerHTML = sentence3;
     }
 })
 
@@ -142,7 +142,7 @@ fourCard.addEventListener("click", function(){
         const rand4 = cardCollection.splice(Math.floor(Math.random() * cardCollection.length), 1);
         fourCard.src = `images/${rand4}`;
         sentence4 = cardSentence[rand4];
-        fort4 = document.getElementById("fortune4").innerHTML = sentence4;
+        document.getElementById("fortune4").innerHTML = sentence4;
     }
 })
 
@@ -154,7 +154,7 @@ fiveCard.addEventListener("click", function(){
         const rand5 = cardCollection.splice(Math.floor(Math.random() * cardCollection.length), 1);
         fiveCard.src = `images/${rand5}`;
         sentence5 = cardSentence[rand5];
-        fort5 = document.getElementById("fortune5").innerHTML = sentence5;
+        document.getElementById("fortune5").innerHTML = sentence5;
     }
 })
 
