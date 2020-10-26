@@ -1,1 +1,1 @@
-# tarot
+First Javascript example
